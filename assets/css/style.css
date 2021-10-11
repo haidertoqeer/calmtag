@@ -482,8 +482,24 @@ select {
         width: 20px;
         margin-left: 10px;
     }
+    
 }
 
+
+
+@media screen and (max-width: 900px) {
+        aside{
+        width: 165px;
+    }
+    .cst-container {
+    width: calc(100vw - 165px);
+    margin: auto;
+    margin-left: 165px;
+}
+    .footer-upper{
+        margin-bottom: 50px;
+    }
+}
 
 @media screen and (max-width: 792px) {
     .top-input-circle-dropdown{
@@ -500,14 +516,7 @@ select {
     .table td, .table th{
         font-size: 10px;
     }
-    aside{
-        width: 165px;
-    }
-    .cst-container {
-    width: calc(100vw - 165px);
-    margin: auto;
-    margin-left: 165px;
-}
+
     .top-left-logo img{
         max-height: 25px;
     }
@@ -530,5 +539,17 @@ select {
     .dashboard-heading-sub span.active{
         top: 1px;
         font-size: 10px;
+    }
+    aside{
+        display: none;
+    }
+    
+     .cst-container {
+    width: 100vw;
+    margin: auto;
+    margin-left: 0;
+}
+    .cst-c1{
+        text-align: left;
     }
 }
