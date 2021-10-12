@@ -21,6 +21,59 @@
 <body>
 	
 		<div class="wrapper">
+		<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      
+           <div class="sidebar">
+				    <div class="top-left-logo">
+				        <img src="assets/images/logo1.png" class="img-fluid" alt="Main Logo">
+				    </div>
+				    <div class="left-link-wrapper">
+				        <div class="dashboard-heading-1">
+				            <i class="fas fa-chart-pie"></i> <span>Dashboard</span>
+				        </div>
+				        <div class="devices-heading">
+				            <span>Devices</span>
+				        </div>
+				        <div class="dashboard-heading-sub">
+				            <img src="assets/icons/Icon%20awesome-box.svg" class="img-fluid" alt=""> <a href="index.html"><span class="active">Stock</span></a>
+				        </div>
+				         <div class="dashboard-heading-sub">
+				            <img src="assets/icons/Icon%20feather-tag.svg" class="img-fluid" alt=""> <a href="devices.html"><span>Device Types</span></a>
+				        </div>
+				         <div class="devices-heading">
+				            <span>Medical Terms</span>
+				        </div>
+				         <div class="dashboard-heading-sub">
+				            <img src="assets/icons/Icon%20awesome-notes-medical.svg" class="img-fluid" alt=""> <a href="conditions.html"><span>Conditions</span></a>
+				        </div>
+				         <div class="dashboard-heading-sub">
+				            <img src="assets/icons/Icon%20awesome-forumbee.svg" class="img-fluid" alt=""> <a href="allergies.html"><span>Allergies</span></a>
+				        </div>
+				        <div class="devices-heading">
+				            <span>Admin</span>
+				        </div>
+				         <div class="dashboard-heading-sub">
+				            <i class="fas fa-chart-pie"></i> <span class="emergency">Emergency Users</span>
+				        </div>
+				         <div class="dashboard-heading-sub">
+				            <img src="assets/icons/Icon%20awesome-users-cog.svg" class="img-fluid" alt=""> <a href="office.html"><span>Back Office Users</span></a>
+				        </div>
+				         <div class="dashboard-heading-sub">
+				            <img src="assets/icons/Icon%20awesome-check-double.svg" class="img-fluid" alt=""> <a href="consents.html"><span>Consents</span></a>
+				        </div>
+				        <div class="dashboard-heading-sub">
+				            <img src="assets/icons/Icon%20metro-bubble.svg" class="img-fluid" alt=""> <a href="language.html"><span>Language</span></a>
+				        </div>
+				        <div class="dashboard-heading-sub">
+				            <img src="assets/icons/Icon%20material-settings.svg" class="img-fluid" alt=""> <a href="#"><span>Settings</span></a>
+				        </div>
+				    </div>
+				</div>
+      
+  </div>
+</div>
 			<aside>
 				<div class="sidebar">
 				    <div class="top-left-logo">
@@ -95,6 +148,7 @@
 					<div class="col-lg-6 cst-c1 col-sm-6 col-xs-12">
 						<button class="button button1">Import Devices via CSV <img src="assets/images/Icon ionic-ios-add.svg"></button>
 						<img src="assets/images/Group 555.svg" class="green-plus" data-toggle="modal" data-target="#exampleModal">
+						<span class="open-nav-cst" onclick="openNav()">&#9776;</span>
 					</div>
 				</div>
 				
@@ -249,5 +303,15 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </body>
 </html>

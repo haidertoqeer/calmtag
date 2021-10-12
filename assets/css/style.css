@@ -446,6 +446,10 @@ select {
     height: 45px;
 }
 
+.open-nav-cst{
+    display: none;
+}
+
 @media screen and (max-width: 1080px) {
   .button2 {
      border: 1px solid #0084BF;
@@ -541,9 +545,9 @@ select {
         font-size: 10px;
     }
     aside{
-        display: none;
+        display: none !Important;
     }
-    
+ 
      .cst-container {
     width: 100vw;
     margin: auto;
@@ -552,4 +556,86 @@ select {
     .cst-c1{
         text-align: left;
     }
+    
+    .button2{
+    padding: 2px;
+    font-size: 10px;
+    margin: 4px 2px;
+    border-radius: 3px;
+    height: 26px;
+    box-shadow: inset 0px 1px 6px #00000029;
+}
+    
+    .cst-c3{
+        padding: 25px 5px;
+    }
+    
+    .pagination{
+        margin-bottom: 50px;
+    }
+    .open-nav-cst{
+        display: inline-block;
+    color: white;
+    background: #2196f3;
+    padding: 8px 15px;
+    border-radius: 5px;
+    position: relative;
+    top: 11px;
+    float: right
+}
+}
+
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+/*
+  padding: 8px;
+  text-decoration: none;
+*/
+  font-size: 12px;
+  color: #818181;
+ 
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
