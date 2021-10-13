@@ -652,6 +652,13 @@ opacity: 1;
                                                Responsive Styling
 ---------------------------------------------------------------------------------------------------------------
 */
+
+
+@media screen and (max-width: 1400px) {
+    aside{
+        position: absolute;
+    }
+}
 @media screen and (max-width: 1080px) {
   .button2 {
      border: 1px solid #0084BF;
