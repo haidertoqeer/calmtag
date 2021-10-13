@@ -111,15 +111,17 @@ aside{
     border: 1px solid #9F9F9F;
     border-radius: 6px;
     opacity: 1;
-    margin-top: 15px;
-    padding: 3px 12px;
+    margin-top: 22px;
+    padding: 3px 22px;
 }
 .button2 {
     border: 1px solid #0084BF;
     color: #9F9F9F;
     background: white;
+/*
     padding: 6px 6px 6px 12px;
     text-align: center;
+*/
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -135,16 +137,19 @@ aside{
     color: #9F9F9F;
     opacity: 1;
     min-width: 147px;
+    position: relative;
+    text-align: left;
 }
+
 .cst-c3{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 4px 20px #00000029;
     border: 1px solid #9F9F9F;
     border-radius: 8px;
     opacity: 1;
-    margin-top: 15px;
+    margin-top: 22px;
     padding: 25px;
-    height: calc(100vh - 350px);
+    height: calc(100vh - 380px);
     overflow: auto;
 }
 .cst-tr{
@@ -162,7 +167,7 @@ aside{
     border: 1px solid #9F9F9F;
     border-radius: 8px;
     opacity: 1;
-    margin-top: 15px;
+    margin-top: 22px;
     padding: 15px;
 }
 .pagination a {
@@ -399,7 +404,10 @@ table{
     -webkit-backdrop-filter: blur(10px);
     
 }
-
+.button2 span{
+    position: relative;
+    left: 5px;
+}
 .modal-header{
     border-bottom: none;
 }
@@ -494,7 +502,8 @@ select {
 }
 .table td, .table th{
     font-weight: 600 !important;
-    vertical-align: middle
+    vertical-align: middle;
+    
 }
 
 .search-condition{
@@ -524,12 +533,16 @@ select {
 .top-input-circle-dropdown{
     width: 25px;
     height: 25px;
-    margin-left: 30px;
+    position: absolute;
+    right: 10px;
+    top: 11px;
 }
 
 .filter-icon{
     width: 45px;
     height: 45px;
+    position: relative;
+    top: -1px;
 }
 
 .open-nav-cst{
@@ -626,6 +639,13 @@ select {
 .modal-title small{
     font-size: 16px !Important;
     font-weight: 400;
+}
+
+.table td{
+    font: normal normal normal 16px/30px Open Sans;
+letter-spacing: 0.15px;
+color: #6B6C6D;
+opacity: 1;
 }
 /*
 ---------------------------------------------------------------------------------------------------------------
