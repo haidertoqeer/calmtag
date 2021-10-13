@@ -52,9 +52,10 @@ aside{
 }
 .cst-rw1{
 	
-	height: 58px;
+/*	height: 58px;*/
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	opacity: 1;
+    min-height: 72px;
 }
 .cst-container{
 	width: calc(100vw - 245px);
@@ -66,10 +67,17 @@ aside{
   height: 20px;
 }
 .cst-p1{
-    font-family: Open Sans,Regular;
-    font-size: 20px;
+/*
+   font-family: Open Sans,Regular;
+    font-size: 16px;
     color: #505D6B;
-    margin-top: 17px;
+    margin-top: 22px;
+*/
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #9F9F9F;
+    opacity: 1;
+      margin-top: 22px;
 }
 .cst-c1{
 	text-align: end;
@@ -88,7 +96,7 @@ aside{
     border-radius: 6px;
     opacity: 1;
     font-family: Open Sans,Regular;
-    height: 40px;
+    height: 50px;
 }
 .cst-rw2{
 	background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -110,18 +118,23 @@ aside{
     border: 1px solid #0084BF;
     color: #9F9F9F;
     background: white;
-    padding: 6px 15px 8px 15px;
+    padding: 6px 6px 6px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
     margin: 16px 2px;
     cursor: pointer;
     border-radius: 6px;
     opacity: 1;
     font-family: Open Sans,Regular;
-    height: 40px;
+    height: 50px;
     box-shadow: inset 0px 1px 6px #00000029;
+    font: normal normal normal 16px/30px Open Sans;
+    letter-spacing: 0.15px;
+    color: #9F9F9F;
+    opacity: 1;
+    min-width: 147px;
 }
 .cst-c3{
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -131,7 +144,7 @@ aside{
     opacity: 1;
     margin-top: 15px;
     padding: 25px;
-    height: calc(100vh - 324px);
+    height: calc(100vh - 350px);
     overflow: auto;
 }
 .cst-tr{
@@ -141,6 +154,7 @@ aside{
 }
 .table td{
 	color: #6B6C6D;
+    font-size: 16px;
 	}
 .cst-c4{
 	background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -186,10 +200,17 @@ aside{
     bottom: 0px;
 }
 .cst-p2{
-	font-size: 12px;
+	font-size: 15px;
 	font-family: Open Sans,Regular;
 	color: #606060;
 	margin-top: 15px;
+}
+.w-40{
+    width: 40% !important;
+}
+.green-plus-top{
+    position: relative;
+    top: 12px
 }
 .search{
 /*
@@ -247,9 +268,14 @@ aside{
 }
 .top-left-logo img{
     max-height: 39px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .left-link-wrapper{
     padding: 20px;
+    padding-left: 27px;
+    padding-right: 5px;
+    padding-top: 0px;
 }
 .dashboard-heading-1 span{
     color: #FFFFFF;
@@ -261,7 +287,7 @@ aside{
     width: 21px;
 }
 .devices-heading{
-    margin-top: 10px;
+    margin-top: 45px;
 }
 .devices-heading span{
     text-align: left;
@@ -285,7 +311,12 @@ aside{
     position: relative;
     top: 3px;
     opacity: 0.7;
-    font-size: 14px;
+    font-size: 16px;
+/*
+    font-weight: semi-bold;
+    font-weight: 600;
+*/
+    font-family: 'Open Sans';
 }
 .dashboard-heading-sub span.active{
 /*    font: normal normal 600 16px/22px Open Sans;*/
@@ -295,7 +326,8 @@ aside{
     margin-left: 10px;
     position: relative;
     top: 3px;
-    font-size: 14px;
+    font-size: 16px;
+        font-weight: 600;
 }
 
 .dashboard-heading-sub i{
@@ -310,9 +342,14 @@ aside{
     color: #FFFFFF;
     opacity: 0.3;
 }
-
+table th, .table th{
+    font-size: 18px;
+    font-weight: 600;
+}
 .table td, .table th {
-    padding: .45rem !important;
+/*    padding: .45rem !important;*/
+    padding-left: 22px;
+    padding-right: 22px;
 }
 .table-borderless .tr1{
     background: #2196f30a;
@@ -328,10 +365,11 @@ table{
     border-spacing: 0 0.2em;
 }
 .green-plus{
-    width: 40px;
-    height: 40px;
-    margin-top: 8px;
+     width: 50px;
+    height: 50px;
+    /* margin-top: 8px; */
     cursor: pointer;
+    margin: 0 10px;
 }
 
 .modal-full {
@@ -350,14 +388,42 @@ table{
 .cst-modal-content{
     background: #ffffff5e !important;
     border: 1px solid rgb(255 255 255 / 35%);
-/*    min-width: 620px;*/
+    /*    min-width: 620px;*/
     padding-bottom: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 20px #00000029;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
 }
 
 .modal-header{
     border-bottom: none;
 }
 
+.button1 img{
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+button:focus{
+    outline: none;
+}
+.button2:focus{
+    border-color: #4CAF50;
+}
+
+input.search:focus{
+     border-color: #4CAF50 !important;
+}
+.button1 span{
+    position: relative;
+    top: 1px
+}
 .modal-type-input{
    
     border: 1px solid #114b7a;
@@ -381,7 +447,7 @@ table{
 }
 .input-inner-img{
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 27px;
 }
 
@@ -392,6 +458,9 @@ table{
     margin-right: 10px;
 }
 
+input.search-condition:focus-within{
+    outline: none;
+}
 select {
         /* for Firefox */
         -moz-appearance: none;
@@ -412,13 +481,30 @@ select {
     color: white;
     position: relative;
     top: 1px;
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
+.add-now i{
+    margin-left: 10px;
+    font-weight: 600;
+    opacity: 0.7;
+}
 .table td, .table th{
     font-weight: 600 !important;
     vertical-align: middle
 }
 
+.search-condition{
+    width: 539px;
+    height: 50px;
+    box-shadow: inset 0px 3px 6px #00000029;
+    border: 1px solid #0084BF;
+    border-radius: 8px;
+    opacity: 1;
+}
 .w-70{
     width: 70%;
 }
@@ -450,6 +536,102 @@ select {
     display: none;
 }
 
+
+.cst-pagination .row-pagination{
+    background: #DEDEDE 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+/*    opacity: 0.58;*/
+    max-width: 350px;
+    margin: auto;
+    padding: 4px;
+    position: relative;
+}
+.row-pagination a{
+    font: normal normal bold 18px/30px Open Sans;
+    letter-spacing: 0.17px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.cst-pagination a{
+    color: inherit;
+    text-decoration: none;
+    margin-left: 0px;
+    padding: 14px 10px;
+    border-radius: 8px;
+    font: normal normal 600 16px/30px Open Sans;
+    letter-spacing: 0.15px;
+    color: #B5B5B5;
+    opacity: 1;
+}
+
+.cst-pagination a.active{
+    background: #2196f3;
+    color: white;
+}
+.cst-pagination a.active:hover{
+    color: white;
+}
+.cst-pagination a:hover{
+    text-decoration: none;
+     color: #B5B5B5;
+}
+.row-pagination span{
+    position: absolute;
+}
+
+.row-pagination .circle-left{
+    left: -50px;
+    border-radius: 50px;
+    background: #dedede;
+    padding: 3px;
+    top: 0px;
+}
+.row-pagination .circle-left img{
+    position: relative;
+    top: -2px;
+    left: -1px;
+}
+.row-pagination .circle-right{
+    right: -50px;
+    border-radius: 50px;
+    background: #dedede;
+    padding: 3px;
+    top: 0px;
+}
+.row-pagination .circle-right img{
+     position: relative;
+    top: -2px;
+    right: -1px;
+}
+.cst-p1 strong{
+    font: normal normal bold 20px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #505D6B;
+    opacity: 1;
+}
+.button span{
+    min-width: 40px;
+}
+
+#exampleModal{
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+.modal-title{
+    font: normal normal bold 20px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.modal-title small{
+    font-size: 16px !Important;
+    font-weight: 400;
+}
+/*
+---------------------------------------------------------------------------------------------------------------
+                                               Responsive Styling
+---------------------------------------------------------------------------------------------------------------
+*/
 @media screen and (max-width: 1080px) {
   .button2 {
      border: 1px solid #0084BF;

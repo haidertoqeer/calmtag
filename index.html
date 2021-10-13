@@ -80,9 +80,11 @@
 				        <img src="assets/images/logo1.png" class="img-fluid" alt="Main Logo">
 				    </div>
 				    <div class="left-link-wrapper">
+<!--
 				        <div class="dashboard-heading-1">
 				            <i class="fas fa-chart-pie"></i> <span>Dashboard</span>
 				        </div>
+-->
 				        <div class="devices-heading">
 				            <span>Devices</span>
 				        </div>
@@ -104,9 +106,11 @@
 				        <div class="devices-heading">
 				            <span>Admin</span>
 				        </div>
+<!--
 				         <div class="dashboard-heading-sub">
 				            <i class="fas fa-chart-pie"></i> <span class="emergency">Emergency Users</span>
 				        </div>
+-->
 				         <div class="dashboard-heading-sub">
 				            <img src="assets/icons/Icon%20awesome-users-cog.svg" class="img-fluid" alt=""> <a href="office.html"><span>Back Office Users</span></a>
 				        </div>
@@ -146,16 +150,16 @@
 						<p class="cst-p1"> <strong> Device Stock </strong>  |  List of Devices </p>
 					</div>
 					<div class="col-lg-6 cst-c1 col-sm-6 col-xs-12">
-						<button class="button button1">Import Devices via CSV <img src="assets/images/Icon ionic-ios-add.svg"></button>
+						<button class="button button1"><span>Import Devices via CSV</span> <img src="assets/images/Icon ionic-ios-add.svg"></button>
 						<img src="assets/images/Group 555.svg" class="green-plus" data-toggle="modal" data-target="#exampleModal">
 						<span class="open-nav-cst" onclick="openNav()">&#9776;</span>
 					</div>
 				</div>
 				
-				<div class="container-fluid">
+				<div class="container-fluid pl-4 pr-4">
 					<div class="row">
 						<div class="col-lg-12 cst-c2">
-							<button class="button2" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Type <img src="assets/images/Icon ionic-md-arrow-dropdown-circle.svg" class="top-input-circle-dropdown">
+							<button class="button2" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><span>Type</span> <img src="assets/images/Icon ionic-md-arrow-dropdown-circle.svg" class="top-input-circle-dropdown">
 								<div class="dropdown-menu">
 										<a class="dropdown-item" href="#">In Stock</a>
 										<a class="dropdown-item" href="#">Shipped</a>
@@ -180,7 +184,7 @@
 					</div>
 				</div>	
 				
-				<div class="container-fluid">
+				<div class="container-fluid pl-4 pr-4">
 					<div class="row">
 						<div class="col-lg-12 cst-c3">
 							<table class="table table-borderless">
@@ -188,7 +192,7 @@
 								<tr class="cst-tr">
 								  <th scope="col">UID</th>
 								  <th scope="col">Type</th>
-								  <th scope="col">Account</th>
+								  <th scope="col" class="w-40">Account</th>
 								  <th scope="col">Status</th>
 								  <th scope="col">Status Date</th>
 								  <th scope="col"></th>
@@ -196,33 +200,33 @@
 							  </thead>
 							  <tbody>
 								<tr class="tr1">
-								  <th scope="row" style="color: #2196F3;font-family:Open Sans;">123456789</th>
+								  <td scope="row" style="color: #2196F3;font-family:Open Sans;">123456789</td>
 								  <td>Tag</td>
-								  <td>fedrick76@hotmail.com</td>
+								  <td class="w-40">fedrick76@hotmail.com</td>
 								  <td>Registered</td>
 								  <td>02/06/2021</td>
 								  <td class="text-right"> <a href=""><img src="assets/images/Icon awesome-minus-circle.svg" class="minus-img"> </a></td>
 								</tr>
 								<tr class="cst-tr1">
-								  <th scope="row"style="color: #2196F3;font-family:Open Sans;">223456789</th>
+								  <td scope="row"style="color: #2196F3;font-family:Open Sans;">223456789</td>
 								  <td>Tag</td>
-								  <td>maria99@outlook.com</td>
+								  <td class="w-40">maria99@outlook.com</td>
 								  <td>Registered</td>
 								  <td>18/09/2021</td>
 								  <td class="text-right"> <a href=""><img src="assets/images/Icon awesome-minus-circle.svg"  class="minus-img"> </a></td>
 								</tr>
 								<tr class="tr1">
-								  <th scope="row"style="color: #2196F3;font-family:Open Sans;">323456789</th>
+								  <td scope="row"style="color: #2196F3;font-family:Open Sans;">323456789</td>
 								  <td>IOT</td>
-								  <td></td>
+								  <td class="w-40"></td>
 								  <td>Shipped</td>
 								  <td>11/11/2021</td>
 								  <td class="text-right"> <a href=""><img src="assets/images/Icon awesome-minus-circle.svg" class="minus-img"> </a></td>
 								</tr>
 								<tr class="cst-tr1">
-								  <th scope="row"style="color: #2196F3;font-family:Open Sans;">223456789</th>
+								  <td scope="row"style="color: #2196F3;font-family:Open Sans;">223456789</td>
 								  <td>IOT</td>
-								  <td></td>
+								  <td class="w-40"></td>
 								  <td>In Stock</td>
 								  <td>12/12/2021</td>
 								  <td class="text-right"> <a href=""><img src="assets/images/Icon awesome-minus-circle.svg" class="minus-img"> </a></td>
@@ -233,22 +237,26 @@
 					</div>
 				</div>
 				
-				<div class="container-fluid">
+				<div class="container-fluid pl-4 pr-4 mb-5">
 					<div class="row">
 						<div class="col-lg-12 cst-c4">
-							<div class="pagination">
-							  <a href=""><img src="assets/images/Icon awesome-angle-left.svg" style="width: 12px;height: 16px;"></a>
-							  <a href="#">1</a>
-							  <a class="active" href="#">2</a>
-							  <a href="#">3</a>
-							  <a href="#">4</a>
-							  <a href="#">5</a>
-							  <a href="#">6</a>
-							  <a href="#">7</a>
-							  <a href="#">8</a>
-							  <a href="#">9</a>
-							  <a href="#">10</a>
-							  <a href=""><img src="assets/images/Icon awesome-angle-left (1).svg" style="width: 12px;height: 16px;"></a>
+							<div class="cst-pagination">
+							 
+							     <div class="row-pagination">
+                                    <span class="circle-left"><a href="" class=""><img src="assets/images/Icon awesome-angle-left.svg"></a></span>
+                                    <a href="#">1</a>
+                                    <a class="active" href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">7</a>
+                                    <a href="#">8</a>
+                                    <a href="#">9</a>
+                                    <a href="#">10</a>
+                                     <span class="circle-right"><a href="" class=""><img src="assets/images/Icon awesome-angle-left (1).svg"></a></span>
+							     </div>
+							  
 							</div>
 						</div>
 					</div>
@@ -266,7 +274,7 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
  <div class="cst-modal-div">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered  modal-xl">
     <div class="modal-content cst-modal-content">
       <div class="modal-header">
         <h6 class="modal-title" id="exampleModalLabel"><strong>Add Devices</strong> &nbsp;&nbsp; | &nbsp;&nbsp;<small>Continue to add without closing dialogue</small></h6>
